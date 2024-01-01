@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/comment_db
+    username: postgres
+    password: Akkiwat5900
+    # Additional properties if needed
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        show_sql: true # Set to true to enable SQL logging, for example
+        format_sql: true # Set to true to format SQL queries, for example
+server:
+  port: 8082
